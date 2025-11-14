@@ -1,0 +1,17 @@
+name: vulnpy
+
+on:
+  push:                                       
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "This is a build step"
+
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "This is a test step"
